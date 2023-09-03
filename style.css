@@ -253,4 +253,206 @@ nav {
         font-size: 15px;
     } 
 }
+.CONTACT {
+  position: relative;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(https://img.freepik.com/premium-photo/gray-calathea-lutea-leaf-patterned-background_53876-149681.jpg?w=1380);
+  background-size: cover;
+  
+}
 
+.CONTACT .content {
+    margin: 100px;
+    text-align: center;
+}
+.CONTACT .content h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #e3b80d;
+}
+.CONTACT .content p {
+    font-weight: 500;
+    color: #f0c207;
+    font-size: xx-large;
+}
+
+.Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Container .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.Container .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.Container .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: hsl(50, 87%, 49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.Container .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 30px;
+    flex-direction: column;
+    font-weight: 500;
+    color: #f0c207;
+}
+.Container .contactinfo .box .text h3 {
+    font-weight: 700;
+}
+
+.Contactform {
+    width: 40%;
+    padding: 40px;
+    background: rgb(220, 186, 14);
+}
+.Contactform h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #2f2e2b;
+}
+.Contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.Contactform .inputbox input,
+.Contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.Contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: rgb(244, 200, 7);
+}
+.Contactform .inputbox input:focus ~ span,
+.Contactform .inputbox iput:valid ~ span,
+.Contactform .inputbox textarea:focus ~ span,
+.Contactform .inputbox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.Contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background: rgb(252, 209, 18);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .CONTACT {
+        padding: 50px;
+    } 
+    .Container {
+        flex-direction: column;
+    }
+    .Container .contactinfo {
+        margin-bottom: 40px;
+    }
+    .Container .contactinfo,
+    .Contactform {
+       width: 100%;
+    }
+}
+
+
+.SERVICES {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fed20f;
+}
+
+.con-tainer {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.con-tainer .boxx {
+    position: relative;
+    background: #2f2e2b;
+    padding: 20px 40px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.con-tainer .boxx:nth-child(1) {
+    background: url(https://img.freepik.com/free-vector/damask-seamless-pattern-classical-luxury-old-fashioned-damask-ornament_1217-3393.jpg?w=826&t=st=1693779983~exp=1693780583~hmac=23e0057a394cc2bbeb3fb7d1b58967d05a4873dbb377280b575a9c82b441377c);
+}
+.con-tainer .boxx:nth-child(2) {
+  background: url(https://img.freepik.com/premium-vector/seamless-floral-texture-with-white-creative-ornamental-outline-flowers-white-background_224667-1929.jpg?w=826);
+}
+.boxx:nth-child(3) {
+  background: url(https://img.freepik.com/free-photo/service-maintenance-worker-repairing_23-2149176701.jpg?w=740&t=st=1693780219~exp=1693780819~hmac=05205094f032c2a5c9503d15041a7e6c8cdd71a33a725ec9561c8b8e72869066);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.con-tainer .boxx h2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    color: #554a16ee;
+}
+.con-tainer .boxx h3 {
+    margin: 0;
+    padding: 0;
+    color: #2f2e2b;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.con-tainer .boxx p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 20px;
+    
+}
+
+.ft {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    font-size: x-large;
+    color: #f0c207;
+}
